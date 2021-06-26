@@ -1,0 +1,61 @@
+h2 {
+    text-align: center;
+}
+
+
+#wrapper {
+    margin-top: 0px;
+    width: 960px;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+#header {
+    padding: 10px;
+}
+
+#header p {
+    margin: 0px;
+}
+
+.text-black {
+    color: black;
+}
+
+.bg-green {
+    background: green;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#content {
+    width: 600px;
+    height: 450px;
+    background: #f3f3f3;
+    float: left;
+}
+
+#sidebar {
+    width: 360px;
+    height: 450px;
+    float: right;
+    background: #e1e1e1;
+}
+
+#wp-content {
+
+
+    height: 450px;
+
+}
+
+#header,
+#footer {
+    color: white;
+}
+
+#footer {
+    padding: 10px;
+}

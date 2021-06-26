@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức xử lý thuộc tính</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            //1 click vào thẻ a hiển thị lên link của hình ảnh thông qua alert();
+            // 2 tham số
+            //     $('a.get_link_img').click(function () {
+            //         var ling_img = $("img").attr('title', 'camera hành trình');
+            //         alert(ling_img);
+            //         return false;
+            //     });
+            // });
+            //     $('a.get_link_img').click(function () {
+            //         var data_href = $("img").attr('data-href');
+            //         alert(data_href);
+            //         return false;
+            //     });
+            // });
+            // 1 tham số
+            //     $('a.get_link_img').click(function () {
+            //         var ling_img = $("img").attr('src');
+            //         alert(ling_img);
+            //         return false;
+            //     });
+            // });
+            //     $('a.get_link_img').click(function () {
+            //         var width_img = $("img").attr('width', '500');
+            //         alert(width_img);
+            //         return false;
+            //     });
+            // });
+
+            $('a.remove_attr').click(function () {
+                $("img").removeAttr('src');
+                return false;
+            });
+        });
+
+
+    </script>
+    <img width="100" data-href="abc.html" src="images/Chibi-Cute (5).jpg" alt="" title="">
+    <a class="get_link_img" href="#">Lấy thông tin </a>
+    <a href="" class="remove_attr">Hủy giá trị thuộc tính</a>
+</body>
+
+</html>

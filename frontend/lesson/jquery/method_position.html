@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm phương thức xử lý tọa độ khoảng cách</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        /* * {
+            padding: 0;
+            margin: 0;
+        } */
+
+        body {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
+        }
+
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        #header,
+        #footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 20px 0px;
+        }
+
+        #content {
+            position: relative;
+            padding: 20px 0px;
+        }
+
+        #content p {
+            margin-bottom: 15px;
+        }
+
+        .widget {
+            width: 100px;
+            height: 50px;
+            background: #f00;
+            position: absolute;
+            top: 50px;
+            left: 200px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // var window_scroll_top, window_scroll_left;
+            // $(window).scrollTop(200);
+            // $(window).scroll(function () {
+
+            //     window_scroll_top = $(window).scrollTop();
+            //     window_scroll_left = $(window).scrollLeft();
+
+            //     console.log(window_scroll_top + "-" + window_scroll_left);
+            // });
+
+            // var content_top = $('#content').offset().top;
+            // var footer_top = $('#footer').offset().top;
+
+            // console.log(content_top + "-" + footer_top);
+
+            var widget_top_content, widget_left_content;
+            widget_top_content = $('.widget').position().top;
+            widget_left_content = $('.widget').position().left;
+            console.log(widget_top_content + "-" + widget_left_content);
+
+
+        });
+    </script>
+    <div id="wrapper">
+        <div id="header">
+            Header
+        </div>
+        <!-- end hedder -->
+        <div id="content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos, aliquid enim officia eos voluptas
+                iure
+                voluptates minus earum, ut deleniti. Dolore mollitia, dolores itaque aliquam totam repudiandae
+                exercitationem est perferendis neque fuga quam, doloribus, tempora iste maxime. Nostrum perferendis, nam
+                iusto expedita quisquam, veniam error alias, praesentium reiciendis mollitia beatae. Quo suscipit
+                pariatur
+                iure laborum nisi illo ipsam consectetur commodi necessitatibus ipsa amet repellat distinctio
+                perferendis
+                consequuntur temporibus adipisci dolore atque, doloremque iste natus labore impedit rerum omnis
+                accusamus.
+                Officiis omnis corrupti perferendis esse ut deleniti voluptatum sint accusamus aliquid numquam nihil
+                eveniet
+                ea, adipisci ratione asperiores provident enim delectus, nobis dolores quis nulla. Aspernatur labore
+                saepe
+                porro, beatae sit veniam asperiores accusamus amet eveniet ullam nihil, qui, rerum consequuntur! Totam
+                tenetur voluptatum ratione error, debitis similique magnam ducimus doloribus nulla aliquid odit
+                dignissimos
+                quos molestiae autem delectus dolore rem quisquam consequuntur expedita facilis. Voluptatum laudantium
+                iusto
+                dicta optio.
+            </p>
+            <div class="widget">
+                Widget
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos, aliquid enim officia eos voluptas
+                iure
+                voluptates minus earum, ut deleniti. Dolore mollitia, dolores itaque aliquam totam repudiandae
+                exercitationem est perferendis neque fuga quam, doloribus, tempora iste maxime. Nostrum perferendis, nam
+                iusto expedita quisquam, veniam error alias, praesentium reiciendis mollitia beatae. Quo suscipit
+                pariatur
+                iure laborum nisi illo ipsam consectetur commodi necessitatibus ipsa amet repellat distinctio
+                perferendis
+                consequuntur temporibus adipisci dolore atque, doloremque iste natus labore impedit rerum omnis
+                accusamus.
+                Officiis omnis corrupti perferendis esse ut deleniti voluptatum sint accusamus aliquid numquam nihil
+                eveniet
+                ea, adipisci ratione asperiores provident enim delectus, nobis dolores quis nulla. Aspernatur labore
+                saepe
+                porro, beatae sit veniam asperiores accusamus amet eveniet ullam nihil, qui, rerum consequuntur! Totam
+                tenetur voluptatum ratione error, debitis similique magnam ducimus doloribus nulla aliquid odit
+                dignissimos
+                quos molestiae autem delectus dolore rem quisquam consequuntur expedita facilis. Voluptatum laudantium
+                iusto
+                dicta optio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos, aliquid enim officia eos voluptas
+                iure
+                voluptates minus earum, ut deleniti. Dolore mollitia, dolores itaque aliquam totam repudiandae
+                exercitationem est perferendis neque fuga quam, doloribus, tempora iste maxime. Nostrum perferendis, nam
+                iusto expedita quisquam, veniam error alias, praesentium reiciendis mollitia beatae. Quo suscipit
+                pariatur
+                iure laborum nisi illo ipsam consectetur commodi necessitatibus ipsa amet repellat distinctio
+                perferendis
+                consequuntur temporibus adipisci dolore atque, doloremque iste natus labore impedit rerum omnis
+                accusamus.
+                Officiis omnis corrupti perferendis esse ut deleniti voluptatum sint accusamus aliquid numquam nihil
+                eveniet
+                ea, adipisci ratione asperiores provident enim delectus, nobis dolores quis nulla. Aspernatur labore
+                saepe
+                porro, beatae sit veniam asperiores accusamus amet eveniet ullam nihil, qui, rerum consequuntur! Totam
+                tenetur voluptatum ratione error, debitis similique magnam ducimus doloribus nulla aliquid odit
+                dignissimos
+                quos molestiae autem delectus dolore rem quisquam consequuntur expedita facilis. Voluptatum laudantium
+                iusto
+                dicta optio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos, aliquid enim officia eos voluptas
+                iure
+                voluptates minus earum, ut deleniti. Dolore mollitia, dolores itaque aliquam totam repudiandae
+                exercitationem est perferendis neque fuga quam, doloribus, tempora iste maxime. Nostrum perferendis, nam
+                iusto expedita quisquam, veniam error alias, praesentium reiciendis mollitia beatae. Quo suscipit
+                pariatur
+                iure laborum nisi illo ipsam consectetur commodi necessitatibus ipsa amet repellat distinctio
+                perferendis
+                consequuntur temporibus adipisci dolore atque, doloremque iste natus labore impedit rerum omnis
+                accusamus.
+                Officiis omnis corrupti perferendis esse ut deleniti voluptatum sint accusamus aliquid numquam nihil
+                eveniet
+                ea, adipisci ratione asperiores provident enim delectus, nobis dolores quis nulla. Aspernatur labore
+                saepe
+                porro, beatae sit veniam asperiores accusamus amet eveniet ullam nihil, qui, rerum consequuntur! Totam
+                tenetur voluptatum ratione error, debitis similique magnam ducimus doloribus nulla aliquid odit
+                dignissimos
+                quos molestiae autem delectus dolore rem quisquam consequuntur expedita facilis. Voluptatum laudantium
+                iusto
+                dicta optio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos, aliquid enim officia eos voluptas
+                iure
+                voluptates minus earum, ut deleniti. Dolore mollitia, dolores itaque aliquam totam repudiandae
+                exercitationem est perferendis neque fuga quam, doloribus, tempora iste maxime. Nostrum perferendis, nam
+                iusto expedita quisquam, veniam error alias, praesentium reiciendis mollitia beatae. Quo suscipit
+                pariatur
+                iure laborum nisi illo ipsam consectetur commodi necessitatibus ipsa amet repellat distinctio
+                perferendis
+                consequuntur temporibus adipisci dolore atque, doloremque iste natus labore impedit rerum omnis
+                accusamus.
+                Officiis omnis corrupti perferendis esse ut deleniti voluptatum sint accusamus aliquid numquam nihil
+                eveniet
+                ea, adipisci ratione asperiores provident enim delectus, nobis dolores quis nulla. Aspernatur labore
+                saepe
+                porro, beatae sit veniam asperiores accusamus amet eveniet ullam nihil, qui, rerum consequuntur! Totam
+                tenetur voluptatum ratione error, debitis similique magnam ducimus doloribus nulla aliquid odit
+                dignissimos
+                quos molestiae autem delectus dolore rem quisquam consequuntur expedita facilis. Voluptatum laudantium
+                iusto
+                dicta optio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos, aliquid enim officia eos voluptas
+                iure
+                voluptates minus earum, ut deleniti. Dolore mollitia, dolores itaque aliquam totam repudiandae
+                exercitationem est perferendis neque fuga quam, doloribus, tempora iste maxime. Nostrum perferendis, nam
+                iusto expedita quisquam, veniam error alias, praesentium reiciendis mollitia beatae. Quo suscipit
+                pariatur
+                iure laborum nisi illo ipsam consectetur commodi necessitatibus ipsa amet repellat distinctio
+                perferendis
+                consequuntur temporibus adipisci dolore atque, doloremque iste natus labore impedit rerum omnis
+                accusamus.
+                Officiis omnis corrupti perferendis esse ut deleniti voluptatum sint accusamus aliquid numquam nihil
+                eveniet
+                ea, adipisci ratione asperiores provident enim delectus, nobis dolores quis nulla. Aspernatur labore
+                saepe
+                porro, beatae sit veniam asperiores accusamus amet eveniet ullam nihil, qui, rerum consequuntur! Totam
+                tenetur voluptatum ratione error, debitis similique magnam ducimus doloribus nulla aliquid odit
+                dignissimos
+                quos molestiae autem delectus dolore rem quisquam consequuntur expedita facilis. Voluptatum laudantium
+                iusto
+                dicta optio.</p>
+
+        </div>
+        <!-- End content -->
+        <div id="footer">
+            footer
+        </div>
+    </div>
+</body>
+
+</html>

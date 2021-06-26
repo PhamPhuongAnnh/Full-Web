@@ -1,0 +1,53 @@
+#wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    margin: 0px auto;
+    text-align: center;
+    width: 960px;
+}
+
+#header .container {
+    background: #0073aa;
+    color: white;
+    padding: 22px 0px;
+    width: 100%;
+}
+
+#header .container p {
+    margin: 0px;
+    text-transform: uppercase;
+
+}
+
+#wp-content .container {
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+}
+
+#wp-content .container #content {
+    background: #f4f4f4;
+    width: 660px;
+    min-height: 670px;
+    order: 2;
+}
+
+#wp-content.container #sidebar {
+    background: #e1e1e1;
+    width: 300px;
+    height: 670px;
+    order: 1;
+}
+
+#footer .container {
+    background: #232323;
+    color: white;
+    padding: 12px 0px;
+    width: 100%;
+}
+
+#footer .container p {
+    margin: 0px;
+}

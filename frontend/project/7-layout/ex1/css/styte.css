@@ -1,0 +1,36 @@
+#wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#header .container {
+    background: #0073aa;
+    color: white;
+    padding: 22px 0px;
+}
+
+#header .container p {
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+#content .container {
+    min-height: 670px;
+    background: #f4f4f4;
+}
+
+#footer .container {
+    background: #232323;
+    color: white;
+    padding: 12px 0px;
+}
+
+#footer .container p {
+    margin: 0px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện Change trong jquery</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        input,
+        select,
+        textarea {
+            display: block;
+            margin-bottom: 15px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#form_input_text').change(function () {
+                alert($(this).val());
+            });
+            $('#form_select').change(function () {
+                alert($(this).val());
+            });
+            $('#form_textarea').change(function () {
+                alert($(this).val());
+            });
+            $('#other').click(function () {
+                $('#form_select').change();
+                return false;
+            });
+
+        });
+    </script>
+    <h1>Sự kiện change trong jquery</h1>
+    <form action="">
+        <input type="text" id="form_input_text" name="form_input_text">
+        <select name="" id="form_select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+
+        </select>
+        <textarea name="" id="form_textarea" cols="30" rows="10"></textarea>
+    </form>
+    <a href="" id="other">Kích hoạt</a>
+</body>
+
+</html>

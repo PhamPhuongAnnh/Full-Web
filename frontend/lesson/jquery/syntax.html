@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cú pháp viết code jquery</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            // $('p').text('Phạm thị phương Anh');
+            //xuất ra họ 
+            $('p .first-name').text('Phạm');
+            //xuất tên
+            $('p .last-name').text('Phương Anh');
+        });
+    </script>
+    <p>Họ: <span class="first-name"></span></p>
+    <p>Tên: <span class="last-name"></span></p>
+</body>
+
+</html>

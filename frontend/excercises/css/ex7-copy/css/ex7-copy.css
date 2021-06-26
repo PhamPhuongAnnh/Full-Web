@@ -1,0 +1,70 @@
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header {
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+#header:hover {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    background: blue;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-basis: auto;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul li {
+    text-align: center;
+    border: 2px solid black;
+    position: relative;
+    margin-top: 10px;
+}
+
+ul li:hover {
+    border: 1px solid blue;
+}
+
+ul li .price {
+    display: block;
+    color: orange;
+
+}
+
+ul li p {
+    margin: 0px auto;
+    margin: 5px auto;
+}
+
+ul li .buy-now {
+    display: block;
+    color: red;
+    padding-bottom: 10px;
+}
+
+ul li .sale #img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#footer {
+    text-align: center;
+    text-transform: uppercase;
+}

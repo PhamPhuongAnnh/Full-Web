@@ -1,0 +1,307 @@
+#wrapper {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0px auto;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    background: #23282d;
+}
+
+
+
+#header .box {
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 24px;
+    justify-content: space-between;
+}
+
+#header .form-search {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    background: #131619;
+}
+
+#header .box .form-search {
+    padding: 5px;
+}
+
+#header .box .form-search .input {
+    background: #131619;
+    border: 0px;
+    font-size: 14px;
+    color: white;
+}
+
+#header .box .icon-search {
+    color: #8f8e8f;
+}
+
+#header .main-menu {
+    display: flex;
+    padding: 0px;
+    padding-bottom: 15px;
+    margin: 0px;
+    border-right: 10px solid red;
+}
+
+#header ul li {
+    padding-right: 40px;
+    text-transform: capitalize;
+}
+
+#header ul li a {
+    color: white;
+
+}
+
+/* end header */
+#highlights {
+    margin-top: 32px;
+}
+
+#highlights .text-highlight {
+    /* padding: 0px 5px; */
+    background: black;
+    color: white;
+    width: fit-content;
+    /* font-size: 16px; */
+    padding: 0px 10px;
+}
+
+
+
+#highlights ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin-top: 20px;
+
+}
+
+#hightlighs ul li {
+    flex-basis: 360px;
+}
+
+/* end hightlight  */
+#box-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#content {
+    /* float: left; */
+    width: 765px;
+
+}
+
+#content .new-post {
+    background: #4db2ec;
+    width: fit-content;
+    padding: 0px 13px;
+    color: #fcfcfc;
+    font-weight: 600;
+}
+
+#content .new-post h2 {
+    margin: 0px;
+}
+
+#content ul {
+    padding: 0px;
+    padding-top: 32px;
+    border-top: 2px solid #4db2ec;
+    margin: 0px;
+}
+
+#content ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#content ul li h3:hover {
+    color: #4db2ec;
+}
+
+#content ul li .box {
+    flex-basis: 456px;
+}
+
+#content ul li .box h3 {
+
+    margin: 0px;
+}
+
+#content ul li p.post-tilte {
+    font-size: 11px;
+    color: #111111;
+    font-weight: 600;
+}
+
+#content ul li .post-date {
+    color: #aaaaaa;
+}
+
+#content ul li .post-content {
+    font-size: 13px;
+}
+
+/* end content */
+/* 
+#sidebar {
+    float: right;
+} */
+
+#sidebar .theme-interest {
+    border-bottom: 1px solid #ff2d2d;
+    margin-top: 40px;
+}
+
+#sidebar h2 {
+    background: #ff2d2d;
+    margin: 0px;
+    width: fit-content;
+    color: #fcfcfc;
+    padding: 0px 15px;
+}
+
+#sidebar ul {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 25px;
+    margin-top: 35px;
+}
+
+#sidebar ul li {
+    margin-bottom: 20px;
+}
+
+#sidebar ul li a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+}
+
+#sidebar ul li a:hover {
+    color: #ff2d2d;
+}
+
+/* end sidebar */
+#footer {
+    background: #2e2f30;
+
+}
+
+#footer .logo {
+    margin-top: 130px;
+}
+
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .about-us {
+    color: white;
+    flex-basis: 472px;
+    padding-bottom: 85px;
+
+}
+
+#footer .about-us h3 {
+    text-transform: capitalize;
+    margin: 48px 0px;
+}
+
+#footer .about-us p {
+    margin: 0px;
+    font-size: 14px;
+}
+
+#footer .about-us a {
+    font-size: 14px;
+    color: #4db2ec;
+}
+
+/* #footer .follow {
+    padding-top: 53px;
+} */
+
+#footer .follow h3 {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 45px;
+    margin-top: 53px;
+}
+
+#footer .follow .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 165px;
+
+}
+
+#footer .follow .icons .icon {
+    color: white;
+    background: #434648;
+    padding: 5px 7px;
+}
+
+#footer .follow .icons .icon:hover {
+    color: #4db2ec;
+}
+
+/* end footer */
+#copyright {
+    background: #222527;
+    font-size: 14px;
+
+}
+
+#copyright .container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#copyright .container .box2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+    width: 226px;
+
+}
+
+#copyright .container .box2 a {
+    color: white;
+}
+
+#copyright .container .box2 a:hover {
+    color: #4db2ec;
+}

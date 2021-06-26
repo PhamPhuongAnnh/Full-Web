@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm selecter làm về class</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .hightline {
+            color: red;
+            background: yellow;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //1 thêm 1 hoặc nhiều phần tử vào bộ chọn 
+            // $('p').click(function () {
+            //     $(this).addClass('hightline');
+            // });
+
+            //2. ấn thêm và xóa 
+            // $('p').click(function () {
+            //     if (!$(this).hasClass('hightline')) {
+            //         $('p').removeClass('hightline');
+            //         $(this).addClass('hightline');
+            //     }
+            // });
+
+            //3 dùng toggleclass: công tắc điện
+            $('p').click(function () {
+                $('p').removeClass('hightline');
+                $(this).toggleClass('hightline');
+
+            });
+
+        });
+
+    </script>
+    <p>đoạn văn bản số 1</p>
+    <p>đoạn văn bản số 2</p>
+    <p>đoạn văn bản số 3</p>
+    <p>đoạn văn bản số 4</p>
+    <p>đoạn văn bản số 5</p>
+</body>
+
+</html>

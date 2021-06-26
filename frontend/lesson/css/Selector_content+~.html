@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo sau liền kề </title>
+</head>
+
+<body>
+    <h3>Selector theo sau liền kề </h3>
+    <style>
+        #content h2+p {
+            color: red;
+            font-weight: bold;
+        }
+
+        #content h2~p {
+            color: green;
+        }
+    </style>
+    <div id="content">
+        <h2>Ho ten</h2>
+        <p>Phạm</p>
+        <p>Phương</p>
+        <p>Anh</p>
+        <p>Tuoi</p>
+        <p>18</p>
+    </div>
+</body>
+
+</html>

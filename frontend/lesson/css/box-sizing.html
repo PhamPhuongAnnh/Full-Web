@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .box-border-box {
+            width: 400px;
+            background-color: yellow;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+
+        .box-content-box {
+            width: 400px;
+            box-sizing: content-box;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid red;
+            background-color: blue;
+
+        }
+    </style>
+    <h2>xác định kích thức khối </h2>
+    <div class="box-border-box">
+        <p>Kích thước khối nở ra khi sử dụng padding</p>
+    </div>
+    <div class="box-content-box">
+        <p>Kích thước khối không thay đổi khi sử dụng padding</p>
+    </div>
+</body>
+
+</html>

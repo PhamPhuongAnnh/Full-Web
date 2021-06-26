@@ -1,0 +1,65 @@
+
+
+
+#wrapper{
+    width: 960px;
+    margin: 0px auto;
+}
+a{
+    text-decoration: none;
+}
+
+#header{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+/* end header */
+ul{
+    display: flex;
+    flex-basis: auto;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ ul li{
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+}
+ul li:hover{
+    border: 2px solid yellow;
+}
+
+ul li .price{
+    display: block;
+    color: orange;
+    font-size: 26px;
+
+}
+ul li p{
+    margin: 6px 0px;
+    font-size: 18px;
+}
+ul li .buy-now{
+    color: red;
+    display: block;
+    padding-bottom: 13px;
+}
+
+ul li .thumb-sale img{
+
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/* end container */
+#footer{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo nhóm </title>
+</head>
+
+<body>
+    <h3>Selector theo nhóm</h3>
+    <style>
+        .hone,
+        .content {
+            color: yellow;
+            text-align: justify;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .home>a,
+        .content>a {
+            color: rgb(22, 240, 105);
+        }
+    </style>
+    <div id="wrapper">
+        <div id="header">
+            <ul id="main-nenu">
+                <li class="home"><a href="">Trang Chủ</a>
+                    <ul type="none">
+                        <li class="food">Bánh</li>
+                        <li class="food">Gạo</li>
+                    </ul>
+                </li>
+                <li class="content"> <a href="">Nội Dung</a></li>
+                <li><a href="">Phản hồi</a></li>
+            </ul>
+            <hr>
+        </div>
+        <div id="content">
+
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+</body>
+
+</html>

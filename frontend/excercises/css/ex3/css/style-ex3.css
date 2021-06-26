@@ -1,0 +1,23 @@
+h1{
+    color: black;
+    background: rgb(45, 223, 45);
+}
+h1:hover{
+    background: red;
+}
+h2{
+    color: blue;
+}
+h2:not(.title){
+color: rgb(255, 123, 0);
+}
+p a{
+    color: brown;
+}
+p a:hover{
+    color: aqua;
+}
+/* input: label */
+form input:checked+label{
+    color: red;
+}

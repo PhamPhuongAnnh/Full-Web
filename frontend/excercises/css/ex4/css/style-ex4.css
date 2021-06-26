@@ -1,0 +1,23 @@
+h1{
+    text-transform: capitalize;
+    text-align: center;
+}
+.p1{
+    font-weight: bold;
+}
+.h21{
+    text-transform: capitalize;
+}
+.p2 span{
+    font-weight: bold;
+}
+.h22{
+    text-transform: uppercase;
+}
+.p3 span{
+    text-decoration: line-through;
+}
+.last{
+    text-align: end;
+    color: orangered;
+}

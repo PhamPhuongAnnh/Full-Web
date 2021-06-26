@@ -1,0 +1,43 @@
+h2{
+    text-align: center;
+}
+#wrapper{
+   width: 960px;
+   height: 450px;
+   margin: 0px auto;
+}
+#header{
+padding: 10px;
+}
+#header p{
+    margin: 0px;
+}
+.bg-blue{
+    background: blue;
+}
+.text-center{
+    text-align: center;
+}
+.text-white{
+    color: white;
+}
+.text-black{
+    color: black;
+}
+#wp-content{
+    width: 960px;
+    display: flex;
+}
+#content{
+    width: 600px;
+background: #f1f1f1;
+height: 450px;
+}
+#sidebar{
+    width: 360px;
+    background: #eeeeee;
+    height: 450px;
+}
+#footer{
+    padding: 10px;
+}

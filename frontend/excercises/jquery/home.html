@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Slider Product</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/styte.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+
+            // hiển thị hình ảnh mặc định 
+            var src_img_click, src_img_first;
+            src_img_first = $("#list_thumb li:first-child img").attr('src');
+            $("#show_slider img").attr('src', src_img_first);
+            console.log(src_img_first);
+
+            $("#list_thumb li a").click(function () {
+                // b1: lấy src từ hình ảnh được chọn
+                src_img_click = $(this).children('img').attr('src');
+                console.log(src_img_click);
+                // b2: gán src lấy được cho src của #show
+                $("#show_slider img").attr('src', src_img_click);
+                $("#list_thumb li").removeClass('active');
+                $(this).parent('li').addClass('active');
+
+                return false;
+            });
+
+        });
+    </script>
+    <div id="wrapper">
+        <h1>Basic slider product</h1>
+        <div id="show_slider">
+            <a href=""><img src="images/thumb (5).png" alt=""></a>
+        </div>
+        <!-- end show  -->
+        <div id="wp_list_thumb">
+            <ul id="list_thumb">
+
+                <li> <a href=""><img src="images/thumb (5).png" alt=""></a>
+                </li>
+                <li><a href=""> <img src="images/thumb copy.png" alt=""></a></li>
+                <li><a href=""> <img src="images/thumb copy 2 (1).png" alt=""></a></li>
+                <li><a href=""> <img class="last_thumb" src="images/thumb copy 3.png" alt=""></a></li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

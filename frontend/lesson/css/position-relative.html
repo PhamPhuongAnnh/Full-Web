@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .text {
+            background: yellow;
+        }
+
+        .box-father {
+            width: 500px;
+            height: 300px;
+            background-color: orange;
+            position: relative;
+        }
+
+        .box-child {
+            width: fit-content;
+            background-color: greenyellow;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+    <h3>postion relative</h3>
+    <div class="container">
+        <div class="box-father">
+            BOX
+            <div class="box-child">BOX 1.1</div>
+        </div>
+    </div>
+</body>
+
+</html>

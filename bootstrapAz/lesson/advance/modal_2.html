@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Modal Boostrao</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Modal Bootstrap</h1>
+                <!-- kích hoạt modal -->
+                <button class="btn btn-primary" data-toggle="modal" data-target="#demo-moldal"> Show Modal</button>
+                <!-- Cấu trúc modal -->
+                <div class="modal fade" id="demo-moldal">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title"> Demo moldal</div>
+                                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+
+                            </div>
+                            <!-- end header -->
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 bg-secondary">col-12</div>
+                                        <div class="col-6 bg-secondary">col 6</div>
+                                        <div class="col-6 bg-secondary">col 6</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end body -->
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">Đóng</button>
+                            <button class="btn btn-primary">Lưu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#demo-modal").modal();
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
